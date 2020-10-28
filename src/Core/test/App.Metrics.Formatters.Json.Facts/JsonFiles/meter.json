@@ -1,0 +1,42 @@
+﻿{
+  "timestamp": "0001-01-01T00:00:00Z",
+  "contexts": [
+    {
+      "context": "context_one",
+      "apdexScores": [],
+      "counters": [],
+      "gauges": [],
+      "histograms": [],
+      "bucketHistograms": [],
+      "meters": [
+        {
+          "name": "test_meter",
+          "unit": "calls",
+          "count": 5,
+          "fifteenMinuteRate": 4,
+          "fiveMinuteRate": 3,
+          "items": [
+            {
+              "count": 1,
+              "fifteenMinuteRate": 5,
+              "fiveMinuteRate": 4,
+              "item": "item",
+              "meanRate": 2,
+              "oneMinuteRate": 3,
+              "percent": 0.5
+            }
+          ],
+          "meanRate": 1,
+          "oneMinuteRate": 2,
+          "rateUnit": "s",
+          "tags": {
+            "host": "server1",
+            "env": "staging"
+          }
+        }
+      ],
+      "timers": [],
+      "bucketTimers": []
+    }
+  ]
+}

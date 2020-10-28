@@ -1,6 +1,7 @@
 {
-  "projects": [ "src", "test", "benchmarks" ],
+  "projects": [ "src", "test", "benchmarks", "sandbox" ],
   "sdk": {
-    "version": "1.0.0-preview2-1-003177"
+    "version": "3.1.202",
+    "rollForward": "latestFeature"
   }
 }

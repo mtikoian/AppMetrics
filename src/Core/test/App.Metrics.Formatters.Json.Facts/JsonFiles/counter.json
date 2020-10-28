@@ -1,0 +1,43 @@
+﻿{
+  "timestamp": "0001-01-01T00:00:00Z",
+  "contexts": [
+    {
+      "context": "context_one",
+      "apdexScores": [],
+      "counters": [
+        {
+          "name": "test_counter",
+          "unit": "items",
+          "count": 200,
+          "items": [
+            {
+              "count": 20,
+              "item": "item1",
+              "percent": 10
+            },
+            {
+              "count": 40,
+              "item": "item2",
+              "percent": 20
+            },
+            {
+              "count": 140,
+              "item": "item3",
+              "percent": 70
+            }
+          ],
+          "tags": {
+            "host": "server1",
+            "env": "staging"
+          }
+        }
+      ],
+      "gauges": [],
+      "histograms": [],
+      "bucketHistograms": [],
+      "meters": [],
+      "timers": [],
+      "bucketTimers": []
+    }
+  ]
+}

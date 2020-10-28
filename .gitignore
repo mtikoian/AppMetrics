@@ -57,8 +57,17 @@ BuildOutput
 BuildOutput/*
 WebPublish
 WebPublish/*
+nuget
+nuget/*
+
+#Cake
+tools/*
+!tools/packages.config
+**/tools/*
+!**/tools/packages.config
 
 .vs
+.vscode/
 
 # visual studio database projects
 *.dbmdl
@@ -83,7 +92,16 @@ BDN.Generated
 BDN.Generated/*
 scripts/BenchMarkDotNet.Artifacts
 scripts/BenchMarkDotNet.Artifacts/*
-**/BenchMarkDotNet.Artifacts/*
+
+!src/Core/benchmarks/App.Metrics.Benchmarks.Runner/BenchmarkDotNet.Artifacts/results/*
+/src/Core/benchmarks/App.Metrics.Benchmarks.Runner/BenchmarkDotNet.Artifacts/*.log
+/src/Core/benchmarks/App.Metrics.Benchmarks.Runner/BenchmarkDotNet.Artifacts/results/*.csv
+/src/Core/benchmarks/App.Metrics.Benchmarks.Runner/BenchmarkDotNet.Artifacts/results/*.html
+
+!src/Concurrency/benchmarks/App.Metrics.Concurrency.Benchmarks.Runner/BenchmarkDotNet.Artifacts/results/*
+/src/Concurrency/benchmarks/App.Metrics.Concurrency.Benchmarks.Runner/BenchmarkDotNet.Artifacts/*.log
+/src/Concurrency/benchmarks/App.Metrics.Concurrency.Benchmarks.Runner/BenchmarkDotNet.Artifacts/results/*.csv
+/src/Concurrency/benchmarks/App.Metrics.Concurrency.Benchmarks.Runner/BenchmarkDotNet.Artifacts/results/*.html
 
 #NDepend
 *.ndproj
@@ -92,3 +110,6 @@ NDependOut/*
 #DotCover
 Session/*
 Session.html
+
+#NServiceBus
+src/NServiceBus/.learningtransport/*

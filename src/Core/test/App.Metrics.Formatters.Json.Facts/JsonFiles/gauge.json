@@ -1,0 +1,26 @@
+﻿{
+  "timestamp": "0001-01-01T00:00:00Z",
+  "contexts": [
+    {
+      "context": "context_one",
+      "apdexScores": [],
+      "counters": [],
+      "gauges": [
+        {
+          "name": "test_gauge",
+          "unit": "calls",
+          "value": 0.5,
+          "tags": {
+            "host": "server1",
+            "env": "staging"
+          }
+        }
+      ],
+      "histograms": [],
+      "bucketHistograms": [],
+      "meters": [],
+      "timers": [],
+      "bucketTimers": []
+    }
+  ]
+}
